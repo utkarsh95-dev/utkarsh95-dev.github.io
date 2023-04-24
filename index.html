@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+    .attribution { 
+    font-size: 11px; text-align: center;
+    margin-top: -700px;
+    }
+    
+    .attribution a { 
+     color: hsl(228, 45%, 44%);
+    }
+    
+    body{
+      background: url('backG.jpg');
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    *{
+      padding:0;
+      margin:0;
+    }
+    .main{
+      display:flex;
+      justify-content: center;
+      align-content: center;
+      background:lightblue;
+      width:800px;
+      height:530px;
+      margin:670px 0;
+      box-shadow: 0px +1px 20px -2px #999;
+    }
+    .sub{
+      width:30%;
+      height:68%;
+      background: white;
+      margin:auto 0px;
+      border-radius:15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0px +1px 10px 1px #999;
+    }
+    .qr-code{
+      margin-top: 7px;
+      border-radius: 10px;
+    }
+    
+    #bold{
+      font-weight:bold;
+      margin:20px 0;
+      font-size: 17px;
+    }
+    
+    #pale{
+      color:#666;
+      font-size: 15px;
+    }
+    
+    @media only screen and (max-width: 415px){
+    body{
+     overflow-y: hidden;
+    }
+    
+     .main{
+      width:415px;
+      height:1800px;
+      margin-top: 0;
+      display:flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;
+    }
+    
+     .sub{
+       width:90%;
+       align-self: center;
+       height:600px;
+       margin-top:55px;
+     }
+     .qr-code{
+       width:88%;
+       height:60%;
+       margin-top:20px;
+     }
+     #bold{
+      font-weight:bold;
+      margin:20px 0;
+      font-size: 25px;
+    }
+     #pale{
+      color:#666;
+      font-size: 19px;
+    }
+     .attribution { 
+    font-size: 21px; 
+    margin-left: 0%;
+    }
+   }
+  </style>
+</head>
+<body>
+   <div class="main">
+     <div class="sub">
+       <img src="image-qr-code.png" width="220px" height="205px" class="qr-code"/>
+       <p class="para" id="bold">Improve your front-end skills by building projects</p>
+
+  <p class="para" id="pale">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+     </div>
+      
+   </div>
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Utkarsh95-dev</a>.
+  </div>
+
+</body>
+</html>
